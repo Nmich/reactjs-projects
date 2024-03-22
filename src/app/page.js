@@ -3,6 +3,8 @@ import ImageSlider from "@/components/image-slider";
 import LoadMoreData from "@/components/load-more-data";
 import RandomColor from "@/components/ramdom-color";
 import StarRating from "@/components/star-rating";
+import TreeView from "@/components/tree-view";
+import menus from "@/components/tree-view/data";
 import Image from "next/image";
 
 export default function Home() {
@@ -17,7 +19,9 @@ export default function Home() {
       {/* Image Slider component */}
       {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={"1"} limit={"10"}/> */}
       {/* Load More data component */}
-      <LoadMoreData/>
+      {/* <LoadMoreData/> */}
+      {/* Tree View component */}
+      <TreeView menus={menus}/>
 
     </div>
   );
